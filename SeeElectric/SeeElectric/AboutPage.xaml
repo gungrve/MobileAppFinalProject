@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SeeElectric.AboutPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="LightGreen" Padding="24" CornerRadius="20">
+                <Label Text="SeeElectric" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <StackLayout HorizontalOptions="Center">
+                <ScrollView>
+                    <StackLayout HorizontalOptions="Fill">
+                        <Grid>
+                            <Label Text="About Us" FontSize="35" FontAttributes="Bold" Margin="25,20,25,0"/>
+                        </Grid>
+                        <Grid>
+                            <Label Text="SeeElectric is an app to enable user to monitor their monthly electricity control. User will be able to store their monthly electrical bill and usage using the app to evaluate their electricity usage."
+                                   
+                                   FontAttributes="Bold" TextColor="LightGreen" Margin="25,40,25,0"/>
+                        </Grid>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+            <Frame BackgroundColor="Blue" Padding="35" VerticalOptions="EndAndExpand" CornerRadius="25">
+                <StackLayout>
+                    <Grid>
+                        <Button x:Name="home" Text="Home" BackgroundColor="LightGreen" Padding="0" VerticalOptions="EndAndExpand" CornerRadius="25" Clicked="homePg"/>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

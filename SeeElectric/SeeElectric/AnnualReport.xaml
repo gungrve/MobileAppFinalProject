@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SeeElectric.AnnualReport">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            
+            <Frame BackgroundColor="LightGreen" Padding="24" CornerRadius="20">
+                <Label Text="SeeElectric" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <StackLayout HorizontalOptions="Center">
+                <ScrollView>
+                    <StackLayout HorizontalOptions="Fill">
+                        <ListView x:Name="displayRecord" ItemsSource="{Binding DateRecorded}">
+                            <ListView.Header>
+                                <Grid>
+                                    <Label Text="Date" HorizontalOptions="Center" FontAttributes="Bold" TextColor="LightGreen"/>
+                                    <Label Grid.Column="1" Text="Current Usage" Margin="40,0,0,0" HorizontalOptions="Center" FontAttributes="Bold" TextColor="LightBlue"/>
+                                    <Label Grid.Column="2" Text="Bill Price" HorizontalOptions="Center" FontAttributes="Bold" TextColor="Red"/>
+                                </Grid>
+                            </ListView.Header>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid>
+                                            <Label Text="{Binding DateRecorded}" Margin="5,0,0,0" HorizontalOptions="Center" FontAttributes="Bold" TextColor="LightGreen"/>
+                                            <Label Grid.Column="1" Text="{Binding Price}" Margin="15,0,0,0" HorizontalOptions="Center" FontAttributes="Bold" TextColor="LightBlue"/>
+                                            <Label Grid.Column="2" Text="{Binding Current}" Margin="30,0,0,0" HorizontalOptions="Center" FontAttributes="Bold" TextColor="Red"/>
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+            <Frame BackgroundColor="Blue" Padding="35" VerticalOptions="EndAndExpand" CornerRadius="25">
+                <StackLayout>
+                    <Grid>
+                        <Button x:Name="home" Text="Home" BackgroundColor="LightGreen" Padding="0" VerticalOptions="EndAndExpand" CornerRadius="25" Clicked="homePg"/>
+                    </Grid>
+                    <Grid>
+                        <Button x:Name="annualRpt" Text="Electrical Appliance Usage" BackgroundColor="LightGreen" Padding="0" VerticalOptions="StartAndExpand" CornerRadius="25" Clicked="appRpt"/>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

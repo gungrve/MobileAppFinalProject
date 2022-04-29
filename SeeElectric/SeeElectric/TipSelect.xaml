@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SeeElectric.TipSelect">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="LightGreen" Padding="24" CornerRadius="20">
+                <Label Text="SeeElectric" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <StackLayout HorizontalOptions="Center">
+                <ScrollView>
+                    <StackLayout HorizontalOptions="Fill">
+                        <Grid>
+                            <Image Source="LED.jpg" WidthRequest="100" HeightRequest="100" Margin="0,20,0,0"/>
+                            <Button Grid.Column="1" Text="LED Bulb" BackgroundColor="LightGray" HeightRequest="100" Margin="0,20,0,0" Clicked="tip1"/>
+                        </Grid>
+                        <Grid>
+                            <Image Source="unplug.jpg" BackgroundColor="Transparent" WidthRequest="100" HeightRequest="100" Margin="0,20,0,0"/>
+                            <Button Grid.Column="1" Text="Unplug or switch off" BackgroundColor="LightGray" HeightRequest="100" Margin="0,20,0,0" Clicked="tip2"/>
+                        </Grid>
+                        <Grid>
+                            <Image Source="aircond.jpg" BackgroundColor="Transparent" WidthRequest="100" HeightRequest="100" Margin="0,20,0,0"/>
+                            <Button Grid.Column="1" Text="Service your air-conditioner" BackgroundColor="LightGray" HeightRequest="100" Margin="0,20,0,0" Clicked="tip3"/>
+                        </Grid>
+                        <Grid>
+                            <Image Source="timer.jpg" BackgroundColor="Transparent" WidthRequest="100" HeightRequest="100" Margin="0,20,0,0"/>
+                            <Button Grid.Column="1" Text="Invest in a plug-in timer switch" BackgroundColor="LightGray" HeightRequest="100" Margin="0,20,0,0" Clicked="tip4"/>
+                        </Grid>
+                        <Grid>
+                            <Image Source="machine.jpg" BackgroundColor="Transparent" WidthRequest="100" HeightRequest="100" Margin="0,20,0,0"/>
+                            <Button Grid.Column="1" Text="Tips for the washing machine" BackgroundColor="LightGray" HeightRequest="100" Margin="0,20,0,0" Clicked="tip5"/>
+                        </Grid>
+                        <Grid>
+                            <Image Source="solar.jpg" BackgroundColor="Transparent" WidthRequest="100" HeightRequest="100" Margin="0,20,0,0"/>
+                            <Button Grid.Column="1" Text="Switch to solar power" BackgroundColor="LightGray" HeightRequest="100" Margin="0,20,0,0" Clicked="tip6"/>
+                        </Grid>
+                        <Grid>
+                            <Image Source="temp.jpg" BackgroundColor="Transparent" WidthRequest="100" HeightRequest="100" Margin="0,20,0,0"/>
+                            <Button Grid.Column="1" Text="Set the right temperature for your fridge and freezer" BackgroundColor="LightGray" HeightRequest="100" Margin="0,20,0,0" Clicked="tip7"/>
+                        </Grid>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+            <Frame BackgroundColor="Blue" Padding="35" VerticalOptions="EndAndExpand" CornerRadius="25">
+                <StackLayout>
+                    <Grid>
+                        <Button x:Name="annualRpt" Text="Annual Electricity Report" BackgroundColor="LightGreen" Padding="0" VerticalOptions="StartAndExpand" CornerRadius="25" Clicked="annRpt"/>
+                    </Grid>
+                    <Grid>
+                        <Button x:Name="appUse" Text="Electrical Appliance Usage" BackgroundColor="LightGreen" Padding="0" VerticalOptions="EndAndExpand" CornerRadius="25" Clicked="appRpt"/>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

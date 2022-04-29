@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SeeElectric.Tips6">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="LightGreen" Padding="24" CornerRadius="20">
+                <Label Text="SeeElectric" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <StackLayout HorizontalOptions="Center">
+                <ScrollView>
+                    <StackLayout HorizontalOptions="Fill">
+                        <Grid>
+                            <Image Source="solar.jpg" WidthRequest="200" HeightRequest="200" VerticalOptions="Center" BackgroundColor="Transparent"/>
+                        </Grid>
+                        <Grid>
+                            <Label Text="This may sound harder than it actually is, to be honest.  Just log on to a shopping website and key in 'solar'. There are solar-powered outdoor lights, water pumps for ponds and fountains, string lights and even power banks!
+
+                                    But wait, it gets better. If you're willing to spend a little more and get actual solar panels that can generate electricity… You can sell your collected electricity to the grid to TNB as it's part of their energy conservation initiative. 
+
+                                    For real, this is happening in Malaysia, so put on your schooling hats and get down to doing a little research because this won't just save electricity or your money – it will make you money: The Feed-In Tariff Malaysia Scheme"
+                                   
+                                   FontAttributes="Bold" TextColor="LightGreen"/>
+                        </Grid>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+            <Frame BackgroundColor="Blue" Padding="35" VerticalOptions="EndAndExpand" CornerRadius="25">
+                <StackLayout>
+                    <Grid>
+                        <Button x:Name="home" Text="Home" BackgroundColor="LightGreen" Padding="0" VerticalOptions="EndAndExpand" CornerRadius="25" Clicked="homePg"/>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

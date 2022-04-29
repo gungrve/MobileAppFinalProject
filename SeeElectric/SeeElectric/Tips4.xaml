@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SeeElectric.Tips4">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="LightGreen" Padding="24" CornerRadius="20">
+                <Label Text="SeeElectric" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <StackLayout HorizontalOptions="Center">
+                <ScrollView>
+                    <StackLayout HorizontalOptions="Fill">
+                        <Grid>
+                            <Image Source="timer.jpg" WidthRequest="200" HeightRequest="200" VerticalOptions="Center" BackgroundColor="Transparent"/>
+                        </Grid>
+                        <Grid>
+                            <Label Text="Unlike the electricity-saving device that 'claimed' to cut your energy bills by 30%, this one's a better and more realistic alternative. If you have got a kid who is afraid of the dark (or if you're afraid of the dark) and you can't bear to switch off your small table lamp then here is your new best friend – the Plug-In Timer Switch — a power saver device that allows for quick and easy automation of electrical appliances. Get one (or more), set it up accordingly (if you're going to sleep, and you've just turned your lamp on then set the timer to switch off in about an hour) – and BAM suddenly you're being energy conscious! Look at you, saving energy, money and the world."
+                                   
+                                   FontAttributes="Bold" TextColor="LightGreen"/>
+                        </Grid>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+            <Frame BackgroundColor="Blue" Padding="35" VerticalOptions="EndAndExpand" CornerRadius="25">
+                <StackLayout>
+                    <Grid>
+                        <Button x:Name="home" Text="Home" BackgroundColor="LightGreen" Padding="0" VerticalOptions="EndAndExpand" CornerRadius="25" Clicked="homePg"/>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

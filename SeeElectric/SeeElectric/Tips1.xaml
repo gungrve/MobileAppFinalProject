@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SeeElectric.Tips1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="LightGreen" Padding="24" CornerRadius="20">
+                <Label Text="SeeElectric" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <StackLayout HorizontalOptions="Center">
+                <ScrollView>
+                    <StackLayout HorizontalOptions="Fill">
+                        <Grid>
+                            <Image Source="LED.jpg" WidthRequest="200" HeightRequest="200" VerticalOptions="Center" BackgroundColor="Transparent"/>
+                        </Grid>
+                        <Grid>
+                            <Label Text="This one's an electric power saver. But don't take our word for it, just breathe in these wonderful numbers:
+
+                                - LED lights are up to 80% more efficient than other lights (like Fluorescent)
+                                - Only 5% of the energy is lost as heat, 95% is converted into light (Fluorescent lights have the opposite effect – 95% heat and 5% energy)
+                                - LED lights use less power – an 84 watt Fluorescent light can be replaced with a 36 watt LED light!)
+                                - They last up to — wait for it — six times longer than traditional lights!
+                                
+                                Conclusions:
+
+                                One: Fluorescent lights are the devil's spawn, clearly. Unless you're using a compact fluorescent light (CFL), then it's a whole different story. Unlike fluorescent light, the CFL is designed to reduce the amount of electricity used. 
+
+                                Two: Using LED lights won't just give you more bang for buck,  it reduces demand from power plants and decreases greenhouse gas emissions too!"
+                                   
+                                   FontAttributes="Bold" TextColor="LightGreen"/>
+                        </Grid>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+            <Frame BackgroundColor="Blue" Padding="35" VerticalOptions="EndAndExpand" CornerRadius="25">
+                <StackLayout>
+                    <Grid>
+                        <Button x:Name="home" Text="Home" BackgroundColor="LightGreen" Padding="0" VerticalOptions="EndAndExpand" CornerRadius="25" Clicked="homePg"/>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

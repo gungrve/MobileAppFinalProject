@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SeeElectric.Tips7">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="LightGreen" Padding="24" CornerRadius="20">
+                <Label Text="SeeElectric" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <StackLayout HorizontalOptions="Center">
+                <ScrollView>
+                    <StackLayout HorizontalOptions="Fill">
+                        <Grid>
+                            <Image Source="temp.jpg" WidthRequest="200" HeightRequest="200" VerticalOptions="Center" BackgroundColor="Transparent"/>
+                        </Grid>
+                        <Grid>
+                            <Label Text="We like to keep things in our refrigerator cold to keep the food inside fresh. But by doing so, you can end up using more energy and at the end of the month, you'll be surprised at how high your energy bill goes up to. Keep the refrigerator temperature at or below 4° C to let it work at peak efficiency and reduce the amount of electricity spent. As for the freezer, the recommended temperature is 0° C.
+
+                                    It doesn't take much to save electricity at home. By doing all of the above, you'll notice that the electricity bill in the following month will be reduced! By our powers combined, we got this, gang! "
+                                   
+                                   FontAttributes="Bold" TextColor="LightGreen"/>
+                        </Grid>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+            <Frame BackgroundColor="Blue" Padding="35" VerticalOptions="EndAndExpand" CornerRadius="25">
+                <StackLayout>
+                    <Grid>
+                        <Button x:Name="home" Text="Home" BackgroundColor="LightGreen" Padding="0" VerticalOptions="EndAndExpand" CornerRadius="25" Clicked="homePg"/>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

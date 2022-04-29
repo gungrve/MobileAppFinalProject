@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SeeElectric.Tips3">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="LightGreen" Padding="24" CornerRadius="20">
+                <Label Text="SeeElectric" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <StackLayout HorizontalOptions="Center">
+                <ScrollView>
+                    <StackLayout HorizontalOptions="Fill">
+                        <Grid>
+                            <Image Source="aircond.jpg" WidthRequest="200" HeightRequest="200" VerticalOptions="Center" BackgroundColor="Transparent"/>
+                        </Grid>
+                        <Grid>
+                            <Label Text="It's Malaysia. It's the land of eternal summer. It's hot. All. Year. Round. So it's completely understandable that air-conds are kept on for obscenely long hours! But do yourself a favour and just have it regularly serviced. This will ensure that it's running efficiently and in turn, your room or home will get colder faster, which means it'll reduce your electricity use! Tada. Electricity saved.
+
+                                   Another way to save electricity and cash is to clean the filter yourself every few months. Cleaning or replacing blocked filters can reduce between 5% and 15% of your energy consumption so go on and YouTube that 'how to' video ASAP."
+                                   
+                                   FontAttributes="Bold" TextColor="LightGreen"/>
+                        </Grid>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+            <Frame BackgroundColor="Blue" Padding="35" VerticalOptions="EndAndExpand" CornerRadius="25">
+                <StackLayout>
+                    <Grid>
+                        <Button x:Name="home" Text="Home" BackgroundColor="LightGreen" Padding="0" VerticalOptions="EndAndExpand" CornerRadius="25" Clicked="homePg"/>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

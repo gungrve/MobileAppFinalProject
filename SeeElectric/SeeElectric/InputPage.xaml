@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SeeElectric.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="LightGreen" Padding="24" CornerRadius="20">
+                <Label Text="SeeElectric" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Grid HeightRequest="200">
+                <Label Text="Input bill information for this month" HorizontalTextAlignment="Center" TextColor="LightGreen" FontAttributes="Bold" Margin="24" FontSize="24"/>
+            </Grid>
+            <ScrollView>
+                <StackLayout>
+                    
+                    <Grid>
+                        <Label Grid.Column="0" Text="Bill Price : " HorizontalTextAlignment="Center" TextColor="LightBlue" FontAttributes="Bold" FontSize="24"/>
+                        <Entry x:Name="Price" Grid.Column="1" TextColor="Red" HorizontalOptions="Center" WidthRequest="150" FontAttributes="Bold" FontSize="24" Keyboard="Numeric"/>
+                    </Grid>
+                    <Grid>
+                        <Label Grid.Column="0" Text="Current Usage : " HorizontalTextAlignment="Center" TextColor="LightBlue" FontAttributes="Bold" FontSize="24"/>
+                        <Entry x:Name="Current" Grid.Column="1" TextColor="Red" HorizontalOptions="Center" WidthRequest="150" FontAttributes="Bold" FontSize="24" Keyboard="Numeric"/>
+                    </Grid>
+                    <Grid>
+                        <Label Grid.Column="0" Text="Electrical Appliance : " HorizontalTextAlignment="Center" TextColor="LightBlue" FontAttributes="Bold" FontSize="24"/>
+                        <Entry x:Name="App" Grid.Column="1" TextColor="Red" HorizontalOptions="Center" WidthRequest="150" FontAttributes="Bold" FontSize="24"/>
+                    </Grid>
+                    <Grid>
+                        <Label Grid.Column="0" Text="Avg time use : " HorizontalTextAlignment="Center" TextColor="LightBlue" FontAttributes="Bold" FontSize="24"/>
+                        <Entry x:Name="AppTime" Grid.Column="1" TextColor="Red" HorizontalOptions="Center" WidthRequest="150" FontAttributes="Bold" FontSize="24" Keyboard="Numeric"/>
+                    </Grid>
+                    <FlexLayout Direction="Row" AlignContent="Center" JustifyContent="SpaceEvenly">
+                        <ImageButton Source="calendaricon.png"
+                         WidthRequest="50"
+                         HeightRequest="50"
+                         IsVisible="true"
+                         HorizontalOptions="End"/>
+                        <DatePicker x:Name="selectDate" DateSelected="onDatePickerSelected" Format="dd/MM/yyyy" />
+                    </FlexLayout>
+                    <Grid Margin="40">
+                        <Button x:Name="Add" Text="ADD" VerticalOptions="CenterAndExpand" 
+                    BackgroundColor="LightGreen" TextColor="White" Clicked="OnSaveRecord" CornerRadius="25"/>
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+            
+
+            <Frame BackgroundColor="Blue" VerticalOptions="EndAndExpand" CornerRadius="25">
+                <StackLayout>
+                    <Grid>
+                        <Button x:Name="homebtn" Text="Home" BackgroundColor="LightGreen" Padding="0" VerticalOptions="CenterAndExpand" CornerRadius="25" Clicked="homePg" FontAttributes="Bold"/>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SeeElectric.MainPage">
+
+    <StackLayout BackgroundColor="White">
+        <Frame BackgroundColor="LightGreen" Padding="24" CornerRadius="20">
+            <Label Text="SeeElectric" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <StackLayout HorizontalOptions="Center">
+            <Grid Margin="30,30,0,0">
+
+                <Label Grid.Column="0" Text="Total usage this year" TextColor="Green" HorizontalOptions="Center" FontSize="24" FontAttributes="Bold"/>
+            </Grid>
+            <Grid Margin="30,30,0,0">
+
+                <Label Grid.Column="0" x:Name="electricUsg" Text="0000" TextColor="SkyBlue" HorizontalOptions="Center" FontAttributes="Bold" FontSize="24"/>
+                <Label Grid.Column="1" Text="kWh" TextColor="SkyBlue" HorizontalOptions="Center" FontAttributes="Bold" FontSize="24"/>
+            </Grid>
+            <Grid Margin="30,30,0,0">
+
+                <Label Grid.Column="0" Text="RM" HorizontalOptions="Center" TextColor="Red" FontAttributes="Bold" FontSize="24"/>
+                <Label Grid.Column="1" x:Name="electricPrc" Text="000" TextColor="Red" HorizontalOptions="Center" FontAttributes="Bold" FontSize="24"/>
+            </Grid>
+        </StackLayout>
+
+        <Frame BackgroundColor="Blue" Padding="35" VerticalOptions="EndAndExpand" CornerRadius="25">
+            <StackLayout>
+                <Grid>
+                    <Button x:Name="annualRpt" Text="Annual Electricity Report" BackgroundColor="LightGreen" Padding="10" VerticalOptions="StartAndExpand" CornerRadius="25" Clicked="annRpt"/>
+                </Grid>
+                <Grid>
+                    <Button x:Name="appUse" Text="Electrical Appliance Usage" BackgroundColor="LightGreen" Padding="10" VerticalOptions="EndAndExpand" CornerRadius="25" Clicked="appRpt"/>
+                </Grid>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
